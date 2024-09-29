@@ -90,6 +90,7 @@ class MuZero:
         else:
             total_gpus = 0
         self.num_gpus = total_gpus / split_resources_in
+        print(f"Total number of gpus : {self.num_gpus}")
         if 1 < self.num_gpus:
             self.num_gpus = math.floor(self.num_gpus)
 
